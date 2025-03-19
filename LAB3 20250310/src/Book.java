@@ -11,7 +11,7 @@ public class Book extends Item{
     }
 
     public String getInformation(){
-        return super.getInformation()+"Liczba stron: "+pageCount+" Gatunek: "+genre+" Język: "+language;
+        return "Liczba stron: "+pageCount+" Gatunek: "+genre+" Język: "+language;
     }
 
 }

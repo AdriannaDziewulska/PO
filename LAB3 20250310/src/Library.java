@@ -41,7 +41,7 @@ public class Library {
         System.out.println("Lista dostępnych pozycji: ");
         for(Item item: ItemList){
             if(item.isAvailable){
-                item.getInformation();
+                System.out.println(item.getInformation());
             }
         }
         System.out.println("    ");

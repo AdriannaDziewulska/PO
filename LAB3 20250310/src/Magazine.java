@@ -13,6 +13,6 @@ public class Magazine extends Item{
     }
 
     public String getInformation(){
-        return super.getInformation()+"Numer magazynu: "+issueNumber+" miesiąc: "+month+" Twmat: "+theme;
+        return "Numer magazynu: "+issueNumber+" miesiąc: "+month+" Twmat: "+theme;
     }
 }

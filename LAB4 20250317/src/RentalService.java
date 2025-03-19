@@ -32,10 +32,8 @@ public class RentalService {
         return totalCost;
     }
     public void chargeAllElectricVehicles(double kWh){
-        for(Vehicle v : vehicles){
-            if (v instanceof ElectricRechargeable){
-                ((ElectricRechargeable) v).chargeBattery(kWh);
-            }
+        for(ElectricRechargeable v : getAllElectricVehicles()){
+                v.chargeBattery(kWh);
         }
     }
 }
